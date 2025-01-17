@@ -1,4 +1,4 @@
-// src/App.tsx
+
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import CryptoPrices from './components/CryptoPrices';
 import AlertForm from './components/AlertForm';

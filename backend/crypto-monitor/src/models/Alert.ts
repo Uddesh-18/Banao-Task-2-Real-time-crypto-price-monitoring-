@@ -5,7 +5,7 @@ const alertSchema = new Schema({
     email: String,
     crypto: String,
     price: Number,
-    condition: String, // 'above' or 'below'
+    condition: String, 
 });
 
 const Alert = model('Alert', alertSchema);

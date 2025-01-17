@@ -14,7 +14,7 @@ const port = 3000;
 app.use(cors()); // Enable CORS
 
 // MongoDB Connection
-const mongoUri = 'mongodb://127.0.0.1:27017/crypto-monitor'; // Replace with your MongoDB URI and database name
+const mongoUri = 'mongodb://127.0.0.1:27017/crypto-monitor'; 
 mongoose.connect(mongoUri).then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => {
@@ -63,10 +63,10 @@ async function cacheCryptoPrices(prices: CryptoPrices) {
 }
 
 // Send Email Alert
-const emailUser = 'f8a395e74c1911'; // Replace with your email user
-const emailPass = 'e947aacaee14c3'; // Replace with your email password
-const emailHost = 'sandbox.smtp.mailtrap.io'; // Replace with your email service or use another one
-const emailPort = 2525; // Mailtrap SMTP port (usually 2525 or 587)
+const emailUser = 'f8a395e74c1911'; 
+const emailPass = 'e947aacaee14c3'; 
+const emailHost = 'sandbox.smtp.mailtrap.io'; 
+const emailPort = 2525; 
 
 async function sendEmailAlert(to: string, subject: string, text: string) {
   try {
