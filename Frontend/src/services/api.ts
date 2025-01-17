@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://localhost:3000'; //Port
 
 export const fetchPrices = async () => {
   try {
